@@ -79,7 +79,7 @@ Page({
     //快递单号发送请求数据
     var temp = this;
 
-    if (temp.data.addressList == "" || temp.data.selectContext.no == "") {
+    if (temp.data.inputContext == "" || temp.data.selectContext.no == "") {
       //地址为空 提示错误信息
       wx.showToast({
         title: '请填写完整!',
