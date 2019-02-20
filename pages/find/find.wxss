@@ -1,0 +1,70 @@
+/* pages/find/find.wxss */
+
+@import "../../iconfont/iconfont.wxss";
+
+.logo {
+  padding: 1.875rem 0 1rem;
+  text-align: center;
+}
+.logo_img{
+  width: 400rpx;
+  height: 160rpx;
+}
+.input_text{
+  
+  padding: 5px;
+  border: 1px solid #3278e6;
+}
+.app-form-ctrl{
+  flex: 6
+  
+}
+.app-search{
+  flex: 1;
+  text-align: center;
+  line-height: 38px;
+  background: #3278e6;
+  
+}
+.app_form{
+  padding-left: 25rpx;
+  padding-right: 25rpx;
+  display: flex;
+}
+.souButton{
+
+  margin-top: 20px;
+  padding-left: 25rpx;
+  padding-right: 25rpx;
+}
+.textContext{
+  margin-top: 20px;
+  padding-left: 25rpx;
+  padding-right: 25rpx;
+
+  font-size: 16px;
+  color: #666;
+}
+
+.fon {
+  font-size: 14px;
+}
+.con{
+  margin-top: 10px;
+}
+.selectCom{
+  margin-top: 20px;
+  padding-left: 25rpx;
+  padding-right: 25rpx;
+}
+.sele{
+  font-size: 16px;
+  color: #666;
+}
+.xiangji {
+  font-size: 20px;
+  color: white;
+}
+.sousuo{
+  font-size: 20px;
+}

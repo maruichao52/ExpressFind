@@ -1,0 +1,41 @@
+<view class="main">
+  <!-- start main -->
+  <view class='logo'>
+    <image class='logo_img' src='../../img/lgo.png'></image>
+  </view>
+
+  <view class='app_form'>
+    <view class='app-form-ctrl'>
+      <input type='text' class='input_text' value='{{inputContext}}' confirm-type="search" bindblur="inputComplete"></input>
+    </view>
+
+    <view class='app-search' bindtap='scanning'><icon class='iconfont icon-xiangji xiangji'></icon></view>
+
+
+  </view>
+
+  <view class='selectCom'>
+    <!-- 选择公司 -->
+    <picker range="{{comList}}" bindchange="selectChange" range-key='com'>
+      <view class='sele'>{{selectContext.com}}</view>
+    </picker>
+  </view>
+
+  <view class='souButton'>
+    <button type="primary" bindtap='find'><icon class='iconfont icon-sousuo-copy sousuo'></icon></button>
+  </view>
+
+
+  <view class='textContext'>
+    <!-- 查询出的文本 -->
+
+    <block wx:for="{{addressList}}" wx:key="{{index}}">
+      <view class='con'>
+        <view class='text'>{{item.datetime}}</view>
+        <view class='text fon'>{{item.remark}}</view>
+      </view>
+    </block>
+  </view>
+
+
+</view>
